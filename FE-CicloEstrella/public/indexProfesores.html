@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesores</title>
+    <link rel="stylesheet" href="assets/styles/styleProfesores.css">
+</head>
+<body>
+    <header>
+        <div class="menuContainer">
+            <a href="indexHome.html"><img class="logo-1" src="images/Logo.png" alt="Logo1"></a>
+
+            <div class="largo">
+                <ul>
+                    <li class="Profesores"><a href="indexProfesores.html">Profesores</a></li>
+                    <li class="Tramites"><a href="indexTramites.html">Tramites</a></li>
+                    <li class="Biblioteca"><a href="indexBiblioteca.html">Biblioteca</a></li>
+                </ul>
+            </div>
+
+            <div class="corto">
+                <ul>
+                    <li class="perfil"><a href="indexPerfil.html">Perfil</a></li>
+                    <li class="cerrar"><a href="index.html">Cerrar sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="centro">
+        <div class="search-container">
+            <input type="text" placeholder="Ingrese el nombre de un profesor o curso [barra de búsqueda]" id="searchBar">
+            <button id="searchButton"><img src="images/lupa.png" alt=""></button>
+        </div>
+
+        <div class = "filtro"> 
+            <button id="filtroboton"><img src="images/filtro.png" alt="">Filtros</button>
+            
+        </div>
+
+        <div id="filtro-panel" class="filtro-panel">
+            <div class="filtro-header">
+                <h2>Filtros</h2>
+                <button id="cerrar-filtro" class="cerrar-boton"><img src="images/botoncerrarfiltro.png" alt=""></button>
+            </div>
+            <div class="filtro-opciones">
+                <div class="filtro-opcion">
+                    <label>Sede:</label>
+                    <div class="sede" id="sede">
+                        <button class="sede-boton" data-sede="MO">MO</button>
+                        <button class="sede-boton" data-sede="SM">SM</button>
+                        <button class="sede-boton" data-sede="VI">VI</button>
+                        <button class="sede-boton" data-sede="SI">SI</button>
+                    </div>
+                </div>
+                <div class="filtro-opcion">
+                    <label>Modalidad:</label>
+                    <div class="modalidad-opciones" id="modalidad">
+                        <button class="modalidad-boton" data-modalidad="Virtual">Virtual</button>
+                        <button class="modalidad-boton" data-modalidad="Presencial">Presencial</button>
+                    </div>
+                </div>
+                <div class="filtro-opcion">
+                    <label>Facultad:</label>
+                    <select id="facultad-select">
+                        <option value="">Seleccionar Facultad</option>
+                        <option value="facultad1">Administración en Hotelería y Turismo</option>
+                        <option value="facultad2">Arquitectura</option>
+                        <option value="facultad3">Artes Contemporáneas</option>
+                        <option value="facultad4">Ciencias de la Salud</option>
+                        <option value="facultad5">Ciencias Humanas</option>
+                        <option value="facultad6">Comunicaciones</option>
+                        <option value="facultad7">Derecho</option>
+                        <option value="facultad8">Diseño</option>
+                        <option value="facultad9">Economía</option>
+                        <option value="facultad10">Educación</option>
+                        <option value="facultad11">Ingeniería</option>
+                        <option value="facultad12">Negocios</option>
+                        <option value="facultad13">Psicología</option>
+                    </select>
+                </div>
+                
+                <div class="filtro-opcion">
+                    <label>Carrera:</label>
+                    <select id="carrera-select">
+                        <option value="">Seleccionar Carrera</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="filtro-botones">
+                <button id="aplicar-filtros">Aplicar Filtros</button>
+                <button id="borrar-filtros">Borrar Filtros</button>
+            </div>
+        </div>
+        <section class="profesores-seccion">
+            <h2>Profesores Destacados De Ingeniería De Software</h2>
+            <div class="profesores-lista">
+                <div class="profesor">
+                    <img src="images/ventura.png" alt="Jose Ventura">
+                    <div class="info">
+                        <h3>Jose Ventura</h3>
+                        <p>Facultad Que Dicta: Ingeniería</p>
+                        <p>Calificación: ⭐ 7.6/10</p>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="profesor">
+                    <img src="images/alejandroalonso.png" alt="Alejandro Alonso">
+                    <div class="info">
+                        <h3>Alejandro Alonso</h3>
+                        <p>Facultad Que Dicta: Ingeniería</p>
+                        <p>Calificación: ⭐ 7.4/10</p>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="profesor">
+                    <img src="images/juanalonso.png" alt="Juan Alonso">
+                    <div class="info">
+                        <h3>Juan Alonso</h3>
+                        <p>Facultad Que Dicta: Ingeniería</p>
+                        <p>Calificación: ⭐ 6.6/10</p>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="profesores-seccion">
+            <h2>Profesores Destacados De Pregrado</h2>
+            <div class="profesores-lista">
+                <div class="profesor">
+                    <img src="images/mariachi.png" alt="Maria Chi">
+                    <div class="info">
+                        <h3>Maria Chi</h3>
+                        <p>Facultad Que Dicta: Comunicación</p>
+                        <p>Calificación: ⭐ 7.6/10</p>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="profesor">
+                    <img src="images/juanroman.png" alt="Juan Roman">
+                    <div class="info">
+                        <h3>Juan Roman</h3>
+                        <p>Facultad Que Dicta: Ingeniería</p>
+                        <p>Calificación: ⭐ 7.6/10</p>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="profesor">
+                    <img src="images/nedinsanchez.png" alt="Nedin Sanchez">
+                    <div class="info">
+                        <h3>Nedin Sanchez</h3>
+                        <p>Facultad Que Dicta: Ingeniería</p>
+                        <p>Calificación: ⭐ 7.6/10</p>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+            </div>
+        </section>
+	</main>
+    <img class="boton-chatbot-icon" src="images/Chatbot.png" alt="Botcito">
+    <script src="assets/scripts/scriptProfesores.js"></script>
+</body>

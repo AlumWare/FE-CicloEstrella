@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #2F1747;
+    font-family: "Inria Sans", sans-serif;
+}
+
+header {
+    padding-bottom: 100px;
+}
+
+.menuContainer .logo-1 {
+    padding: 15.8px 25px 25px 25px;
+    width: 15%;
+    height: 15%;
+    float: left;
+}
+
+.menuContainer .largo ul li {
+    padding: 35px 25px;
+    float: left;
+    margin-top: 0%;
+    font-family: "Inria Sans";
+    font-weight: 300;
+    font-size: large;
+}
+
+.menuContainer .largo ul li a {
+    color: #ffffff;
+}
+
+.menuContainer .corto ul li {
+    padding: 35px 25px;
+    float: right;
+    margin-top: 0%;
+    font-family: "Inria Sans";
+    font-weight: 300;
+    font-size: large;
+}
+
+.menuContainer .corto ul .perfil a {
+    padding: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.menuContainer .corto ul .cerrar a {
+    color: #ffffff;
+}
+
+.centro {
+    background-color: #ffffff;
+    padding: 50px 0px;
+}
+
+.centro .titulo {
+    padding: 25px 45px;
+    margin-bottom: 160px;
+    font-family: "Inria Sans";
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #2F1747;
+}
+
+.centro .titulo .welcome {
+    padding: 20px 30px;
+    float: left;
+    margin-left: auto;
+}
+
+.centro .titulo .notepad h5 {
+    padding: 5px;
+    font-size: medium;
+    color: #000000;
+}
+
+.centro .titulo .notepad img {
+    width: 50px;
+}
+
+.centro .titulo .notepad {
+    padding: 20px;
+    float: right;
+    margin-right: auto;
+    background-color: #D4CCDC;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.centro .contenido {
+    align-content: center;
+}
+
+.centro .contenido .Profes {
+    padding: 0px 0px 0px 150px;
+    float: left;
+}
+
+.centro .contenido .tramites {
+    padding: 0px 150px 0px 0px;
+    float: right;
+}
+
+.centro .contenido .Profes h3 {
+    font-family: "Inria Sans";
+    font-size: x-large;
+    font-weight: 700;
+    color: #2F1747;
+    padding: 15px;
+}
+
+.centro .contenido .tramites h3 {
+    font-family: "Inria Sans";
+    font-size: x-large;
+    font-weight: 700;
+    color: #2F1747;
+    padding: 15px;
+}
+
+.columna {
+    padding: 40px 50px;
+    background: #D4CCDC;
+    border-radius: 40px;
+}
+
+.borde {
+    padding: 15px 5px;
+}
+
+.recuadro {
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 30px;
+}
+
+.recuadro .nombre {
+    padding: 15px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.nombre img {
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+.nombre h4 {
+    margin-right: auto;
+    padding: 27px 15px;
+    font-family: "Inria Sans";
+    font-size: large;
+    letter-spacing: 0.25px;
+    color: #000000;
+}
+
+.Profes .medio {
+    padding: 5px 0px;
+    font-family: "Inria Sans";
+    font-size: large;
+    letter-spacing: 0.25px;
+    display: flex;
+}
+
+.sedes h5 {
+    padding: 0px 36px;
+}
+
+.sedes .opciones {
+    display: flex;
+    padding: 18px 10px;
+}
+
+.sedes .opciones h4 {
+    padding: 12px 15px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.sedes .opciones .morado {
+    background-color: #2F1747;
+    color: #ffffff;
+}
+
+.borrar {
+    padding: 10px 10px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: -30px;
+}
+
+.tramites .borrar {
+    margin-left: 80px;
+}
+
+.borrar img {
+    padding: 5px 0px;
+    width: 25px;
+}
+
+.final {
+    padding: 10px;
+    font-family: "Inria Sans";
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.Profes .final {
+    margin-bottom: 8px;
+    margin-left: 20px;
+}
+
+.tramites .final {
+    margin-top: -20px;
+}
+
+.final h5 {
+    padding: 4px 0px;
+}
+
+.final h6 {
+    padding: 4px 0px;
+    color: gray;
+}
+
+.tramites .medio {
+    padding: 5px 10px;
+    font-family: "Inria Sans";
+    font-size: large;
+    letter-spacing: 0.25px;
+    display: flex;
+}
+
+.footerIntro {
+    padding: 20px;
+    background-color: #674C82;
+}
+
+.footerIntro .ChatBot {
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    width: 80px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #f7f4b3; /* Color amarillo claro */
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.modal-content h2 {
+    text-align: center;
+}
+
+.close {
+    color: #4a4a4a;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    resize: none;
+    border: 1px solid #ccc;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #674C82; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+#savedNotes {
+    margin-top: 20px;
+}
+
+#savedNotes h3 {
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
+#savedNotes p {
+    font-size: 16px;
+    color: #4a4a4a;
+}
+
+#displayNotes p {
+    list-style-type: disc;
+    margin-left: 20px;
+}

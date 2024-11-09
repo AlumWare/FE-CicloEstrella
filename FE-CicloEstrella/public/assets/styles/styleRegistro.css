@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Inria Sans", sans-serif;
+}
+
+header {
+    padding-bottom: 50px;
+}
+
+.cabecera .logo {
+    padding: 15px;
+    width: 15%;
+    height: 15%;
+    float: left;
+}
+
+.Contenido {
+    display: flex;
+    align-items: center;
+}
+
+.Contenido .Campos {
+    padding: 30px;
+    text-align: left;
+    font-family: "Inria Sans";
+}
+
+.Contenido .Campos .Welcome {
+    text-align: center;
+    padding: 25px 10px;
+    color: #2F1747;
+    font-size: large;
+    font-weight: 500;
+}
+
+.Contenido .Campos .CasillaNombre {
+    padding: 20px 20px;
+}
+
+.Contenido .Campos .CasillaNombre h3 {
+    padding: 10px 0px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.Contenido .Campos .CasillaNombre h5 {
+    padding: 10px 200px 10px 15px;
+    color: #6E6E6E;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+}
+
+.Contenido .Campos .CasillaCorreo {
+    padding: 20px;
+}
+
+.Contenido .Campos .CasillaCorreo h3 {
+    padding: 10px 0px 10px 0px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.Contenido .Campos .CasillaCorreo h5 {
+    padding: 10px 200px 10px 15px;
+    color: #6E6E6E;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+}
+
+.Contenido .Campos .CasillaContrasena {
+    padding: 20px;
+}
+
+.Contenido .Campos .CasillaContrasena h3 {
+    padding: 10px 0px 10px 0px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.Contenido .Campos .CasillaContrasena h5 {
+    padding: 10px 200px 10px 15px;
+    color: #6E6E6E;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+}
+
+.Contenido .Campos .CasillaContrasena2 {
+    padding: 20px;
+}
+
+.Contenido .Campos .CasillaContrasena2 h3 {
+    padding: 10px 0px 10px 0px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.Contenido .Campos .CasillaContrasena2 h5 {
+    padding: 10px 200px 10px 15px;
+    color: #6E6E6E;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+}
+
+.Contenido .Campos .Modalidad {
+    padding: 20px;
+}
+
+.Contenido .Campos .Modalidad h3 {
+    padding: 10px 0px;
+    color: black;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.Contenido .Campos .Modalidad ul {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    float: inherit;
+}
+
+.Contenido .Campos .Modalidad ul li {
+    padding: 5px 20px 5px 10px;
+}
+
+.Contenido .Campos .Modalidad ul li h4{
+    display: flex;
+    padding: 20px 40px;
+    background-color: #ECF0F1;
+    border-radius: 10px;
+}
+
+.Contenido .Campos .Terminos {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.Contenido .Campos .Terminos img {
+    width: 20px;
+    padding: 5px;
+}
+
+.Contenido .imgPrincipal {
+    padding: 30px;
+    text-align: right;
+}
+
+.Contenido .imgPrincipal img {
+    width: 70%;
+    height: 70%;
+}
+
+.Contenido .Opciones .CrearCuenta {
+    padding: 10px;
+}
+
+.Contenido .Opciones a .CrearCuenta h2 {
+    color: #2F1747;
+    padding: 10px;
+    font-family: "Inria Sans";
+    text-align: center;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    background-color: #FFCB47;
+    border-radius: 10px;
+}
+
+.Contenido .Opciones h4 {
+    padding: 10px;
+    text-align: center;
+}
+
+.Contenido .Opciones h4 a {
+    color: #2F1747;
+}
