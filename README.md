@@ -1,5 +1,7 @@
 # Ciclo Estrella
 
+![Logo de Ciclo Estrella](https://github.com/AlumWare/FE-CicloEstrella/blob/255e24f2270f41338a2404f643283aeee003c4ad/FE-CicloEstrella/public/images/Logo.png)
+
 # Información del Proyecto
 Ciclo Estrella es una aplicación creada para mejorar la experiencia de los estudiantes de pregrado y EPE de la Universidad Peruana de Ciencias Aplicadas (UPC) al proporcionar información confiable y organizada sobre cursos, profesores y trámites universitarios. La aplicación centraliza las opiniones de estudiantes, recomendaciones de profesores y guía detallada para trámites académicos, permitiendo una planificación académica más efectiva y reduciendo el estrés asociado con el proceso de matrícula y otras gestiones administrativas.
 
