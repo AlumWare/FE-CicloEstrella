@@ -24,4 +24,3 @@ Convertirnos en líderes en cuanto al manejo de información de trámites univer
 - **Recomendaciones de Profesores:** Los estudiantes pueden filtrar y seleccionar profesores basándose en métodos de enseñanza, reseñas y experiencias de otros estudiantes.
 - **Guía para Trámites Académicos:** Se proporcionan guías paso a paso para trámites, como retiro de asignaturas y emisión de carnet universitario. Además, se muestran actualizados respecto al Ciclo Académico actual
 - **Chatbot Integrado:** Ofrece respuestas específicas y personalizadas a las dudas de los estudiantes. Puede recomendar profesores o guías sobre trámites en función de los datos ingresados.
-- **Estadísticas de Tiempo y Dificultad de Cursos:** Proporciona una estimación de horas de estudio y la dificultad relativa de los cursos, lo que facilita la planificación y organización de los estudiantes.
