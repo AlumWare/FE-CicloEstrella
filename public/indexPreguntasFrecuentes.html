@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas Frecuentes</title>
+    <link rel="stylesheet" href="assets/styles/stylePreguntasFrecuentes.css">
+    <link rel="stylesheet" href="assets/styles/styleHeader.css">
+</head>
+<body>
+    <header>
+        <div class="menuContainer">
+            <a href="indexHome.html" class="logo-link">
+                <img class="logo-1" src="images/Logo.png" alt="Logo de la página">
+            </a>
+            <nav class="menu">
+                <ul class="menu-items largo">
+                    <li><button onclick="location.href='indexProfesores.html'">Profesores</button></li>
+                    <li><button onclick="location.href='indexTramites.html'">Trámites</button></li>
+                    <li><button onclick="location.href='indexBiblioteca.html'">Biblioteca</button></li>
+                </ul>
+                <ul class="menu-items corto">
+                    <li><button class="perfil" onclick="location.href='indexPerfil.html'">Perfil</button></li>
+                    <li><button class="cerrar" onclick="location.href='index.html'">Cerrar sesión</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="tituloPrincipal">
+            <h1>¿Qué información estás buscando?</h1>
+            <h2>Encuentra las respuestas a las preguntas más frecuentes</h2>
+        </section>
+
+        <section class="filtros">
+            <h3>Temas disponibles</h3>
+            <div class="filtroBotones">
+                <button>General</button>
+                <button>Trámites</button>
+                <button>Profesores</button>
+                <button>Biblioteca</button>
+            </div>
+        </section>
+
+        <section class="preguntasRespuestas">
+            <h3>Preguntas frecuentes</h3>
+        
+            <div class="preguntaRespuesta" data-category="general">
+                <h4>¿Cómo puedo registrarme?</h4>
+                <p>Para registrarte, visita la página de registro y completa el formulario con tus datos personales.</p>
+            </div>
+        
+            <div class="preguntaRespuesta" data-category="trámites">
+                <h4>¿Qué encuentro en la sección de "Trámites"?</h4>
+                <p>En la sección de trámites, puedes encontrar información útil y detallada sobre los procesos administrativos y gestiones que necesitas realizar.</p>
+            </div>
+        
+            <div class="preguntaRespuesta" data-category="profesores">
+                <h4>¿Dónde puedo encontrar los horarios de los profesores?</h4>
+                <p>Los horarios de los profesores están disponibles en la sección "Profesores" del menú principal.</p>
+            </div>
+        
+            <div class="preguntaRespuesta" data-category="biblioteca">
+                <h4>¿En la biblioteca puedo hacer notas?</h4>
+                <p>Sí, puedes hacer anotaciones con la función de "Notepad" cuando ingreses a la sección. Podrás guardar información importante o lo que necesites respecto a tu vida universitaria.</p>
+            </div>
+        </section>        
+    </main>
+    <script src="assets/scripts/scriptPreguntasFrecuentes.js"></script>
+</body>
+</html>

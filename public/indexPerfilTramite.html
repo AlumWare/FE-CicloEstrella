@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Trámite</title>
+    <link rel="stylesheet" href="assets/styles/stylePerfilTramite.css">
+    <link rel="stylesheet" href="assets/styles/styleHeader.css">
+</head>
+<body>
+    <header>
+        <div class="menuContainer">
+            <a href="indexHome.html" class="logo-link">
+                <img class="logo-1" src="images/Logo.png" alt="Logo de la página">
+            </a>
+            <nav class="menu">
+                <ul class="menu-items largo">
+                    <li><button onclick="location.href='indexProfesores.html'">Profesores</button></li>
+                    <li><button onclick="location.href='indexTramites.html'">Trámites</button></li>
+                    <li><button onclick="location.href='indexBiblioteca.html'">Biblioteca</button></li>
+                </ul>
+                <ul class="menu-items corto">
+                    <li><button class="perfil" onclick="location.href='indexPerfil.html'">Perfil</button></li>
+                    <li><button class="cerrar" onclick="location.href='index.html'">Cerrar sesión</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+    <button class="back-button"><a href="indexTramites.html"><img src="images/regresar.png" alt=""></a></button>
+    <div class="profile-header">
+        <div class="tramite-info">
+            <h2>Emisión De Carnet</h2>
+            <div class="dates">
+                <div class="date-box">
+                    <h3>Fecha Inicio</h3>
+                    <p>12/12/2024</p>
+                </div>
+                <div class="date-box">
+                    <h3>Fecha Fin</h3>
+                    <p>12/12/2024</p>
+                </div>
+            </div>
+        </div>
+        <div class="description-box">
+            <p>
+                El trámite de emisión del carnet universitario consiste en completar el formulario en línea, subir
+                una foto reciente y esperar la notificación para recoger el carnet en la oficina correspondiente.
+            </p>
+        </div>
+    </div>
+
+    <div class="comments-section">
+        <h3>Comentarios</h3>
+        <div class="search-container">
+            <input type="text" placeholder="Escribir Comentario..." class="search-bar">
+        </div>
+        <div class="comment-buttons">
+            <button class="cancel-button">Cancelar</button>
+            <button class="publish-button">Publicar</button>
+        </div>
+        <small>max. caracteres: 150</small>
+
+        <div class="comments-container">
+            <div class="comments">
+                <div class="comment">
+                    <p><strong>Javi_21:</strong> Buen trámite, me aceptaron la foto a la primera.</p>
+                </div>
+                <div class="comment favorite">
+                    <span class="like-icon">❤️</span>
+                    <p><strong>AnaTechGirl:</strong> Nunca había tenido tantos problemas con un trámite.</p>
+                </div>
+            </div>
+            <div class="favorite-comments">
+                <h3>Comentarios Favoritos</h3>
+                <div class="comment favorite">
+                    <span class="like-icon">❤️</span>
+                    <p><strong>EstudiantePro123:</strong> Toma tiempo en llegar, háganlo en cuanto puedan.</p>
+                </div>
+                <div class="comment favorite">
+                    <span class="like-icon">❤️</span>
+                    <p><strong>LauraGeek20:</strong> Recuerden subir su foto cada vez que lo hacen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>    
+
+    <div class="chatbot-icon">
+        <img class="ChatBot" src="images/Chatbot.png" alt="Botcito" onclick="toggleChatbot()">
+    </div>
+    <script src="assets/scripts/scriptChatbot.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/styleChatbot.css">
+</body>
+</html>

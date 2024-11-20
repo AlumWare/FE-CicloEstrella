@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+body {
+    background-color: #2F1747;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.centro {
+    background-color: #ffffff;
+    padding: 30px;
+    font-family: inherit;
+}
+
+.menuContainer .logo-1 {
+    padding: 15px;
+    width: 18%;
+    height: 18%;
+    float: left;
+}
+
+.menuContainer ul li {
+    padding: 35px 20px;
+    float: right;
+    margin-top: 0%;
+    font-family: "Inria Sans";
+    font-weight: 300;
+    font-size: large;
+}
+
+.menuContainer ul .registro a {
+    padding: 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-family: "Inria Sans";
+}
+
+.menuContainer ul .inicioSesion a {
+    color: #ffffff;
+    font-family: "Inria Sans";
+}
+
+
+
+.frase {
+    padding: 45px;
+    font-family: inherit;
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 0.4px;
+    color: #2F1747;
+    text-align: center;
+}
+
+
+.imagenesIntro {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.imagenesIntro .ImgProfes img{
+    padding: 25px 15px;
+    width: 90%;
+    height: 90%;
+}
+
+.imagenesIntro .ImgIdea img{
+    padding: 25px 15px;
+    width: 90%;
+    height: 90%;
+}
+
+.imagenesIntro .ImgTramite img{
+    padding: 25px 15px;
+    width: 90%;
+    height: 90%;
+}
+
+.btnIngreso {
+    text-align: center;
+    font-family: "Inria Sans";
+    padding: 10px;
+}
+
+.btnIngreso a {
+    color: #000000;
+    padding: 15px;
+    font-family: "Inria Sans";
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+    background-color: #FFCB47;
+    border-radius: 10px;
+}
+
+.footerIntro {
+    padding: 30px;
+    background-color: #674C82;
+    align-items: center;
+    text-align: center;
+}
+
+.footerIntro .fraseFooter {
+    padding: 5px;
+    color: #FFCB47;
+    font-family: "Inria Sans";
+    font-size: larger;
+    letter-spacing: 0.8px;
+}

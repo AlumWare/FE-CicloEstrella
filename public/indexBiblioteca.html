@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biblioteca</title>
+        <link rel="stylesheet" href="assets/styles/styleBiblioteca.css">
+        <link rel="stylesheet" href="assets/styles/styleHeader.css">
+        <script>
+            function openNotePad() {
+                document.getElementById("noteModal").style.display = "block";
+            }
+        
+            function closeNotePad() {
+                document.getElementById("noteModal").style.display = "none";
+            }
+        
+            function saveNote() {
+                const noteInput = document.getElementById("noteInput").value;
+                const displayNotes = document.getElementById("displayNotes");
+                
+                if (noteInput.trim() !== "") {
+                    displayNotes.innerHTML += "<p>" + noteInput + "</p>";
+                }
+                
+                document.getElementById("noteInput").value = "";
+            }
+        </script>    
+    </head>
+    <body>
+        <header>
+            <div class="menuContainer">
+                <a href="indexHome.html" class="logo-link">
+                    <img class="logo-1" src="images/Logo.png" alt="Logo de la página">
+                </a>
+                <nav class="menu">
+                    <ul class="menu-items largo">
+                        <li><button onclick="location.href='indexProfesores.html'">Profesores</button></li>
+                        <li><button onclick="location.href='indexTramites.html'">Trámites</button></li>
+                        <li><button onclick="location.href='indexBiblioteca.html'">Biblioteca</button></li>
+                    </ul>
+                    <ul class="menu-items corto">
+                        <li><button class="perfil" onclick="location.href='indexPerfil.html'">Perfil</button></li>
+                        <li><button class="cerrar" onclick="location.href='index.html'">Cerrar sesión</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="centro">
+            <div class="titulo">
+                <h2 class="welcome">Bienvenido, usuario, a tu biblioteca personal</h2>
+                <div class="notepad">
+                    <img src="images/libreta.png" alt="Libreta" onclick="openNotePad()">
+                </div>
+                <div id="noteModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="closeNotePad()">&times;</span>
+                        <h2>Mis notas</h2>
+                        <textarea id="noteInput" placeholder="Escribe tus notas aquí..."></textarea>
+                        <button onclick="saveNote()">Guardar Nota</button>
+                        <div id="savedNotes">
+                            <p id="displayNotes"></p>
+                        </div>
+                    </div>
+                </div>         
+            </div>
+            <div class="contenido">
+                <!-- Profesores Guardados -->
+                <div class="Profes">
+                    <h3>Profesores guardados</h3>
+                    <div class="columna">
+                        <!-- Profesor 1 -->
+                        <div class="borde">
+                            <div class="recuadro">
+                                <div class="nombre">
+                                    <img src="images/ventura.png" alt="ventura">
+                                    <h4>Daniel Ramos</h4>
+                                </div>
+                                <div class="medio">
+                                    <div class="sedes">
+                                        <h5>Sedes Donde Dicta:</h5>
+                                        <div class="opciones">
+                                            <h4>MO</h4>
+                                            <h4>SM</h4>
+                                            <h4>VI</h4>
+                                            <h4 class="morado">SI</h4>
+                                        </div>
+                                    </div>
+                                    <div class="borrar">
+                                        <h5>Eliminar</h5>
+                                        <img src="images/basurero.png" alt="chau">
+                                    </div>
+                                </div>
+                                <div class="final">
+                                    <h5>Notas:</h5>
+                                    <h6>"Este profe es muy bueno"</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profesor 2 -->
+                        <div class="borde">
+                            <div class="recuadro">
+                                <div class="nombre">
+                                    <img src="images/julio.png" alt="julio">
+                                    <h4>Julio Pérez</h4>
+                                </div>
+                                <div class="medio">
+                                    <div class="sedes">
+                                        <h5>Sedes Donde Dicta:</h5>
+                                        <div class="opciones">
+                                            <h4>MO</h4>
+                                            <h4 class="morado">SM</h4>
+                                            <h4>VI</h4>
+                                            <h4>SI</h4>
+                                        </div>
+                                    </div>
+                                    <div class="borrar">
+                                        <h5>Eliminar</h5>
+                                        <img src="images/basurero.png" alt="chau">
+                                    </div>
+                                </div>
+                                <div class="final">
+                                    <h5>Notas:</h5>
+                                    <h6>"Explica muy bien los conceptos"</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profesor 3 -->
+                        <div class="borde">
+                            <div class="recuadro">
+                                <div class="nombre">
+                                    <img src="images/jesus.png" alt="jesus">
+                                    <h4>Jesús Morales</h4>
+                                </div>
+                                <div class="medio">
+                                    <div class="sedes">
+                                        <h5>Sedes Donde Dicta:</h5>
+                                        <div class="opciones">
+                                            <h4 class="morado">MO</h4>
+                                            <h4>SM</h4>
+                                            <h4>VI</h4>
+                                            <h4>SI</h4>
+                                        </div>
+                                    </div>
+                                    <div class="borrar">
+                                        <h5>Eliminar</h5>
+                                        <img src="images/basurero.png" alt="chau">
+                                    </div>
+                                </div>
+                                <div class="final">
+                                    <h5>Notas:</h5>
+                                    <h6>"Es muy amable y paciente"</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trámites Guardados -->
+                <div class="tramites">
+                    <h3>Trámites Guardados</h3>
+                    <div class="columna">
+                        <!-- Tramite 1 -->
+                        <div class="borde">
+                            <div class="recuadro">
+                                <div class="nombre">
+                                    <img src="images/hojas.png" alt="hojas">
+                                    <h4>Emisión De Carnet</h4>
+                                </div>
+                                <div class="medio">
+                                    <div class="final">
+                                        <h5>Notas:</h5>
+                                        <h6>"Trámite para noviembre"</h6>
+                                    </div>
+                                    <div class="borrar">
+                                        <h5>Eliminar</h5>
+                                        <img src="images/basurero.png" alt="chau">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tramite 2 -->
+                        <div class="borde">
+                            <div class="recuadro">
+                                <div class="nombre">
+                                    <img src="images/hojas.png" alt="hojas">
+                                    <h4>Duplicado De Carnet</h4>
+                                </div>
+                                <div class="medio">
+                                    <div class="final">
+                                        <h5>Notas:</h5>
+                                        <h6>"Trámite para diciembre"</h6>
+                                    </div>
+                                    <div class="borrar">
+                                        <h5>Eliminar</h5>
+                                        <img src="images/basurero.png" alt="chau">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tramite 3 -->
+                        <div class="borde">
+                            <div class="recuadro">
+                                <div class="nombre">
+                                    <img src="images/hojas.png" alt="hojas">
+                                    <h4>Retiro de Curso</h4>
+                                </div>
+                                <div class="medio">
+                                    <div class="final">
+                                        <h5>Notas:</h5>
+                                        <h6>"Trámite urgente para noviembre"</h6>
+                                    </div>
+                                    <div class="borrar">
+                                        <h5>Eliminar</h5>
+                                        <img src="images/basurero.png" alt="chau">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tramite 4 -->
+                        <div class="borde">
+                            <div class="recuadro">
+                                <div class="nombre">
+                                    <img src="images/hojas.png" alt="hojas">
+                                    <h4>Cambio De Sede</h4>
+                                </div>
+                                <div class="medio">
+                                    <div class="final">
+                                        <h5>Notas:</h5>
+                                        <h6>"Cambio solicitado para enero"</h6>
+                                    </div>
+                                    <div class="borrar">
+                                        <h5>Eliminar</h5>
+                                        <img src="images/basurero.png" alt="chau">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    
+        <footer class="footerIntro">
+            <div class="fraseFooter">
+                <h2>Ahorra tiempo y esfuerzo</h2>
+            </div>
+            <div class="faqSection">
+            <a href="indexPreguntasFrecuentes.html"><h3>¿Tienes preguntas? Haz Click Aquí</h3></a>
+            </div>
+            <img class="ChatBot" src="images/Chatbot.png" alt="Botcito" onclick="toggleChatbot()">
+        </footer>
+        
+        <script src="assets/scripts/scriptChatbot.js" defer></script>
+        <link rel="stylesheet" href="assets/styles/styleChatbot.css">
+        <script src="assets/scripts/main.js"></script>
+    </body>
+</html>
+
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Profesor</title>
+    <link rel="stylesheet" href="assets/styles/stylePerfilProfesores.css">
+    <link rel="stylesheet" href="assets/styles/styleHeader.css">
+</head>
+<body>
+    <header>
+        <div class="menuContainer">
+            <a href="indexHome.html" class="logo-link">
+                <img class="logo-1" src="images/Logo.png" alt="Logo de la página">
+            </a>
+            <nav class="menu">
+                <ul class="menu-items largo">
+                    <li><button onclick="location.href='indexProfesores.html'">Profesores</button></li>
+                    <li><button onclick="location.href='indexTramites.html'">Trámites</button></li>
+                    <li><button onclick="location.href='indexBiblioteca.html'">Biblioteca</button></li>
+                </ul>
+                <ul class="menu-items corto">
+                    <li><button class="perfil" onclick="location.href='indexPerfil.html'">Perfil</button></li>
+                    <li><button class="cerrar" onclick="location.href='index.html'">Cerrar sesión</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <button class="back-button button"><a href="indexProfesores.html"><img src="images/regresar.png" alt=""></a></button>
+            <div class="profile-header">
+                <img src="images/ventura.png" alt="Foto del Profesor" class="profile-image">
+                <div class="profile-info">
+                    <h2>Nedin Carlos, Ventura Fernandez</h2>
+                    <p class="rating">7.6/10 ⭐</p>
+                    <p class="description">
+                        Profesor que explica de manera clara y didáctica, manteniendo un ambiente entretenido 
+                        pero profesional en clase. Ofrece retroalimentación constructiva y valiosa para mejorar 
+                        el rendimiento de los alumnos.
+                    </p>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="characteristics">
+                    <h3>Características Destacadas del Profesor</h3>
+                    <span class="tag">Didáctico</span>
+                    <span class="tag">Paciente</span>
+                    <span class="tag">Exigente</span>
+                    <span class="tag">Dinámico</span>
+                </div>
+                <div class="locations">
+                    <h3>Sedes</h3>
+                    <span class="tag">MO</span>
+                    <span class="tag selected">SM</span>
+                    <span class="tag selected">VI</span>
+                    <span class="tag">SI</span>
+                </div>
+                <div class="courses">
+                    <h3>Cursos Dictados</h3>
+                    <span class="tag">SI34</span>
+                    <span class="tag">SI35</span>
+                    <span class="tag">SI36</span>
+                    <span class="tag">SI37</span>
+                    <span class="tag">SI38</span>
+                    <span class="tag">SI39</span>
+                </div>
+            </div>
+
+            <div class="comments-section">
+                <div class="comments-header">
+                    <h3>Comentarios</h3>
+                    <button class="image-button">
+                        <img src="images/ingresarcomen.png" alt="Icono Comentario">
+                        <span>Ingresar Comentario</span>
+                    </button>
+                </div>
+                <div class="comment-input">
+                    <div class="search-container">
+                        <input type="text" placeholder="Ingrese palabras claves para buscar comentarios o consejos" class="search-bar">
+                        <span class="search-icon">🔍</span>
+                </div>
+                <div class="comments-container">
+                    <div class="comments">
+                        <div class="comment">
+                            <p><strong>Javi_21:</strong> Sabe del tema, pero a veces sus explicaciones son confusas y cuesta seguirle el ritmo.</p>
+                        </div>
+                        <div class="comment favorite">
+                            <span class="like-icon">❤️</span>
+                            <p><strong>AnaTechGirl:</strong> Explica súper bien y siempre tiene paciencia para aclarar dudas.</p>
+                        </div>
+                        <div class="comment favorite">
+                            <span class="like-icon">❤️</span>
+                            <p><strong>EstudiantePro123:</strong> Las clases son amenas y dinámicas, hace que el tiempo pase volando.</p>
+                        </div>
+                    </div>
+                    <div class="favorite-comments">
+                        <h3>Comentarios Favoritos</h3>
+                        <div class="comment favorite">
+                            <span class="like-icon">❤️</span>
+                            <p><strong>EstudiantePro123:</strong> Las clases son amenas y dinámicas, hace que el tiempo pase volando.</p>
+                        </div>
+                        <div class="comment favorite">
+                            <span class="like-icon">❤️</span>
+                            <p><strong>AnaTechGirl:</strong> Explica súper bien y siempre tiene paciencia para aclarar dudas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    
+
+    <div class="chatbot-icon">
+        <img class="ChatBot" src="images/Chatbot.png" alt="Botcito" onclick="toggleChatbot()">
+    </div>
+    <script src="assets/scripts/scriptChatbot.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/styleChatbot.css">
+</body>
+</html>

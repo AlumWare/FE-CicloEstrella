@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tramites</title>
+    <link rel="stylesheet" href="assets/styles/styleTramites.css">
+    <link rel="stylesheet" href="assets/styles/styleHeader.css">
+</head>
+<body>
+    <header>
+        <div class="menuContainer">
+            <a href="indexHome.html" class="logo-link">
+                <img class="logo-1" src="images/Logo.png" alt="Logo de la página">
+            </a>
+            <nav class="menu">
+                <ul class="menu-items largo">
+                    <li><button onclick="location.href='indexProfesores.html'">Profesores</button></li>
+                    <li><button onclick="location.href='indexTramites.html'">Trámites</button></li>
+                    <li><button onclick="location.href='indexBiblioteca.html'">Biblioteca</button></li>
+                </ul>
+                <ul class="menu-items corto">
+                    <li><button class="perfil" onclick="location.href='indexPerfil.html'">Perfil</button></li>
+                    <li><button class="cerrar" onclick="location.href='index.html'">Cerrar sesión</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="centro">
+        <div class="search-container">
+            <input type="text" placeholder="Buscar trámite..." id="searchBar">
+            <button id="searchButton"><img src="images/lupa.png" alt="Buscar"></button>
+        </div>
+
+        <section class="tramites-seccion">
+            <h2>Trámites Existentes</h2>
+            <div class="tramites-lista">
+                <div class="tramite">
+                    <div class="info">
+                        <h3>Emisión de Carnet</h3>
+                        <p>Con este trámite podrás sacar tu carnet universitario</p>
+                        <div class="fechas">
+                            <div class="fecha-inicio">
+                                <u>Fecha Inicio</u>
+                                <p>12/12/2024</p>
+                            </div>
+                            <div class="fecha-fin">
+                                <u>Fecha Fin</u>
+                                <p>12/12/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-button"><a href="indexPerfilTramite.html">+</a></button>
+                </div>
+                <div class="tramite">
+                    <div class="info">
+                        <h3>Retiro de curso</h3>
+                        <p>Con este trámite podrás retirarte de un curso</p>
+                        <div class="fechas">
+                            <div class="fecha-inicio">
+                                <u>Fecha Inicio</u>
+                                <p>12/12/2024</p>
+                            </div>
+                            <div class="fecha-fin">
+                                <u>Fecha Fin</u>
+                                <p>12/12/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="tramite">
+                    <div class="info">
+                        <h3>Cambio de sede</h3>
+                        <p>Con este trámite podrás cambiar la sede principal en la que estudias</p>
+                        <div class="fechas">
+                            <div class="fecha-inicio">
+                                <u>Fecha Inicio</u>
+                                <p>12/12/2024</p>
+                            </div>
+                            <div class="fecha-fin">
+                                <u>Fecha Fin</u>
+                                <p>12/12/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tramites-seccion">
+            <h2>Trámites Disponibles Actualmente</h2>
+            <div class="tramites-lista">
+                <div class="tramite">
+                    <div class="info">
+                        <h3>Emisión de Carnet</h3>
+                        <p>Con este trámite podrás sacar tu carnet universitario</p>
+                        <div class="fechas">
+                            <div class="fecha-inicio">
+                                <u>Fecha Inicio</u>
+                                <p>12/12/2024</p>
+                            </div>
+                            <div class="fecha-fin">
+                                <u>Fecha Fin</u>
+                                <p>12/12/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="tramite">
+                    <div class="info">
+                        <h3>Retiro de curso</h3>
+                        <p>Con este trámite podrás retirarte de un curso</p>
+                        <div class="fechas">
+                            <div class="fecha-inicio">
+                                <u>Fecha Inicio</u>
+                                <p>12/12/2024</p>
+                            </div>
+                            <div class="fecha-fin">
+                                <u>Fecha Fin</u>
+                                <p>12/12/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+                <div class="tramite">
+                    <div class="info">
+                        <h3>Cambio de sede</h3>
+                        <p>Con este trámite podrás cambiar la sede principal en la que estudias</p>
+                        <div class="fechas">
+                            <div class="fecha-inicio">
+                                <u>Fecha Inicio</u>
+                                <p>12/12/2024</p>
+                            </div>
+                            <div class="fecha-fin">
+                                <u>Fecha Fin</u>
+                                <p>12/12/2025</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="add-button">+</button>
+                </div>
+            </div>
+        </section>
+	</main>
+    <footer class="footerIntro">
+        <div class="fraseFooter">
+            <h2>Ahorra tiempo y esfuerzo</h2>
+        </div>
+        <div class="faqSection">
+        <a href="indexPreguntasFrecuentes.html"><h3>¿Tienes preguntas? Haz Click Aquí</h3></a>
+        </div>
+        <img class="ChatBot" src="images/Chatbot.png" alt="Botcito" onclick="toggleChatbot()">
+    </footer>
+    <script src="assets/scripts/scriptChatbot.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/styleChatbot.css">
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>

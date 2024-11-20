@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/styles/styleHome.css">
+    <link rel="stylesheet" href = "assets/styles/styleHeader.css">
+</head>
+<body>
+    <header>
+        <div class="menuContainer">
+            <a href="indexHome.html" class="logo-link">
+                <img class="logo-1" src="images/Logo.png" alt="Logo de la página">
+            </a>
+            <nav class="menu">
+                <ul class="menu-items largo">
+                    <li><button onclick="location.href='indexProfesores.html'">Profesores</button></li>
+                    <li><button onclick="location.href='indexTramites.html'">Trámites</button></li>
+                    <li><button onclick="location.href='indexBiblioteca.html'">Biblioteca</button></li>
+                </ul>
+                <ul class="menu-items corto">
+                    <li><button class="perfil" onclick="location.href='indexPerfil.html'">Perfil</button></li>
+                    <li><button class="cerrar" onclick="location.href='index.html'">Cerrar sesión</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class="centro">
+
+        <div class="frase">
+            <h1>Encuentra todo lo que necesitas para matricularte y más</h1>
+        </div>
+
+        <div class="imagenesIntro">
+            <div class="ImgProfes">
+                <img src="images/ConoceALosProfes2.png" alt="Imagen profes">
+            </div>
+            <div class="ImgIdea">
+                <img src="images/PlanificaTuCiclo2.png" alt="Imagen idea">
+            </div>
+            <div class="ImgTramite">
+                <img src="images/TramitesPasoAPaso2.png" alt="Imagen tramites paso a paso">
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footerIntro">
+
+        <div class="fraseFooter">
+            <h2>Ahorra tiempo y esfuerzo</h2>
+        </div>
+        <div class="faqSection">
+        <a href="indexPreguntasFrecuentes.html"><h3>¿Tienes preguntas? Haz Click Aquí</h3></a>
+        </div>
+        <img class="ChatBot" src="images/Chatbot.png" alt="Botcito" onclick="toggleChatbot()">
+    </footer>
+    <script src="assets/scripts/scriptChatbot.js" defer></script>
+    <script src ="assets/scripts/functional.js" defer></script>
+    <link rel="stylesheet" href="assets/styles/styleChatbot.css">
+</body>
+</html>

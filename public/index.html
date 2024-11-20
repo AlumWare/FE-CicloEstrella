@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciclo Estrella</title>
+    <link rel="stylesheet" href="assets/styles/styleLanding.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="menuContainer">
+            <a href="index.html" class="logo-link">
+                <img class="logo" src="images/Logo.png" alt="Ciclo Estrella Logo">
+            </a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#about" >Acerca de</a></li>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="indexRegistro.html" class="cta-button">¡Comienza ahora!</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a Ciclo Estrella</h1>
+            <p>Tu guía confiable para profesores, trámites y cursos universitarios.</p>
+            <button onclick="scrollToSection('features')">Explorar más</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Acerca de Ciclo Estrella</h2>
+        <p>En Ciclo Estrella, facilitamos la vida de los estudiantes proporcionando información esencial sobre profesores, trámites y cursos en un solo lugar.</p>
+    </section>
+    
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2>Lo que ofrecemos</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <p>Consulta perfiles, opiniones y calificaciones.</p>
+                <img src="images/profesora.png" alt="Profesores">
+            </div>
+            <div class="card">
+                <p>Accede a guías paso a paso para realizar tus trámites.</p>
+                <img src="images/tramites.png" alt="Trámites">
+                
+            </div>
+            <div class="card">
+                <p>Explora cursos disponibles y encuentra el ideal para ti.</p>
+                <img src="images/libros.png" alt="Cursos">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Lo que dicen nuestros usuarios</h2>
+        <div class="testimonial-slider">
+            <blockquote>"Ciclo Estrella me ayudó a planificar mi semestre. ¡Muy recomendable!"</blockquote>
+            <blockquote>"Gracias a esta plataforma encontré al profesor perfecto para mi curso."</blockquote>
+            <blockquote>"La guía de trámites es clara y fácil de seguir. Ahorra mucho tiempo."</blockquote>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="cta" class="cta">
+        <h2>¿Listo para mejorar tu experiencia universitaria?</h2>
+        <button onclick="location.href='indexRegistro.html'">Regístrate ahora</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Ciclo Estrella. Todos los derechos reservados.</p>
+            <ul class="social-media">
+                <li><a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="images/x-icon.png" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com/ghostrider101218/?hl=es"><img src="images/instagram-icon.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="assets/scripts/scriptLanding.js" defer></script>
+</body>
+</html>

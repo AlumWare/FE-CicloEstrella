@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #2F1747;
+    font-family: "Inria Sans", sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.main{
+    padding:15px;
+    font-family: inherit;
+}
+
+.back-button{
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.back-button img{
+    width: 50px; 
+    height: auto;
+}
+
+.profile {
+    width: 100%; 
+    max-width: none; 
+    margin: 0; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 0; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #FFCB47;
+}
+
+.profile-info h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: black;
+    text-transform: capitalize;
+}
+
+.profile-info .rating {
+    font-size: 24px;
+    font-weight: 400;
+    color: black;
+}
+
+.profile-info .description {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.63);
+    word-wrap: break-word;
+}
+
+/* Características y detalles */
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.details h3 {
+    font-size: 24px;
+    color: #2F1747;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.tag {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px 0;
+    background: rgba(0, 0, 0, 0.05);
+    color: rgba(0, 0, 0, 0.50);
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.characteristics .tag{
+    background-color: #FFE194
+}
+
+.courses .tag{
+    background-color: #FFE194
+}
+
+.tag.selected {
+    background: #FFCB47;
+    color: #2F1747;
+}
+
+/* Comentarios */
+.comments-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: inherit;
+}
+
+.comments-section h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2F1747;
+    margin-bottom: 10px;
+}
+
+.comments-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comments-header h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2F1747;
+    margin: 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #F5F5F5;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 15px;
+    flex: 1;
+    position: relative;
+    font-family: inherit;
+}
+
+.search-bar {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+    color: #2F1747;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.search-bar::placeholder {
+    color: #888;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #2F1747;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.image-button {
+    display: flex;
+    align-items: center;
+    background-color: #FFCB47;
+    color: #2F1747;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.image-button img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.image-button span {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .comment-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .image-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.comment-input .add-comment {
+    background: #FFCB47;
+    color: #2F1747;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.comments-container {
+    margin-top: 20px;
+}
+
+.comment {
+    background: #EFE9EF;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    position: relative;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    text-transform: capitalize;
+    word-wrap: break-word;
+}
+
+.comment strong {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.comment.favorite {
+    border: 2px solid #F9A826;
+    background: #FFFBEA;
+}
+
+.like-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #F9A826;
+    cursor: pointer;
+}
+
+.favorite-comments h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #2F1747;
+    text-transform: capitalize;
+}
+
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+}
+
+.chatbot-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}

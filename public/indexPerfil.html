@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="assets/styles/stylePerfil.css">
+    <link rel="stylesheet" href="assets/styles/styleHeader.css">
+</head>
+<body>
+    <header>
+        <div class="menuContainer">
+            <a href="indexHome.html" class="logo-link">
+                <img class="logo-1" src="images/Logo.png" alt="Logo de la página">
+            </a>
+            <nav class="menu">
+                <ul class="menu-items largo">
+                    <li><button onclick="location.href='indexProfesores.html'">Profesores</button></li>
+                    <li><button onclick="location.href='indexTramites.html'">Trámites</button></li>
+                    <li><button onclick="location.href='indexBiblioteca.html'">Biblioteca</button></li>
+                </ul>
+                <ul class="menu-items corto">
+                    <li><button class="perfil" onclick="location.href='indexPerfil.html'">Perfil</button></li>
+                    <li><button class="cerrar" onclick="location.href='index.html'">Cerrar sesión</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main class = "centro">
+        <section class="infoUsuario">
+            <h2>Información Básica</h2>
+            <label>Nombre</label>
+            <input type="text" placeholder="Nombre Del Usuario" enabled>
+            
+            <label>Correo Electrónico</label>
+            <input type="text" placeholder="Correo Del Usuario" enabled>
+
+            <h2 class = infoadi>Información Adicional</h2>
+            <label>Carrera</label>
+            <input type="text" placeholder="Carrera Del Usuario" enabled>
+
+            <label>Ciclo</label>
+            <input type="text" placeholder="Ciclo Del Usuario" enabled>
+            
+            <a href="indexEditarPerfil.html"><button class="editarBtn">Editar información</button></a>
+        </section>
+
+        <section class="configuracionSistema">
+            <h2>Configuración Del Sistema</h2>
+            <label>Idioma</label>
+            <select id="idiomadesplegable">
+                <option value="">Seleccionar Idioma</option>
+                <option value="idioma1">Español</option>
+                <option value="idioma1">Inglés</option>
+            </select>
+            <div class="ajustes">
+                <h3>Ajustes</h3>
+                <button>Cambiar Contraseña</button>
+                <button>Visibilidad Del Perfil</button>
+                <button>Notificaciones</button>
+                <button>Apariencia</button>
+            </div>
+        </section>
+        
+        <button class="volverBtn"><a href="indexHome.html">Volver a página de inicio</a></button>
+    </main>
+</body>
